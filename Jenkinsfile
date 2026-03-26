@@ -2,6 +2,12 @@ pipeline {
     agent any
 
     stages {
+	stage('Clean Workspace') {
+	   steps {
+	        cleanWs()
+	    }
+	}
+
         stage('Clone Repo') {
             steps {
                 git branch: 'main', url:  'https://github.com/idrissrb/two-tier-flask-app.git'
