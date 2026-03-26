@@ -29,7 +29,7 @@ pipeline {
         stage('Integration Test') {
             steps {
 		sh 'sleep 15'
-                sh 'curl -f http://165.227.129.1:5000 || exit 1'
+                sh 'curl -f http://localhost:5000 || exit 1'
             }
         }
     }
