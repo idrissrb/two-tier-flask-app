@@ -33,7 +33,7 @@ Developer → GitHub → Jenkins (webhook) → Docker Compose → Flask + MySQL
 4. Jenkins builds the Docker image for the Flask app
 5. Docker Compose spins up Flask + MySQL containers
 6. Jenkins runs an integration test (HTTP request to port 5000)
-7. Pipeline passes ✅ — app is live
+7. Pipeline passes — app is live
 
 ---
 
@@ -193,8 +193,7 @@ Using the public IP from inside the droplet can be blocked by the firewall.
 
 Use the new syntax without the hyphen:
 ```groovy
-sh 'docker compose up -d'   // ✅ correct
-sh 'docker-compose up -d'   // ❌ old syntax
+sh 'docker compose up -d'  
 ```
 
 ---
