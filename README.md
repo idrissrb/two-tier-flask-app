@@ -198,7 +198,7 @@ sh 'docker compose up -d'
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Running app
 ![App screenshot](screenshots/app.png)
